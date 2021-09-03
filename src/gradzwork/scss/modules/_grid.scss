@@ -1,0 +1,50 @@
+/*
+  .modules/_grid.scss
+  Module de la grille
+ */
+
+//------------------------------------------------------------------------------------------------
+//MODULE VARIABLE
+//------------------------------------------------------------------------------------------------
+$gridNbRepeat: 12;
+$gridColSpan: 12;
+$gridRowSpan: 1;
+
+$gridGapV: 1rem;
+$gridGapH: 1rem;
+
+//------------------------------------------------------------------------------------------------
+//MODULE SPECIFICATIONS
+//------------------------------------------------------------------------------------------------
+// MODULE DE LA GRILLE ---------------------
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat($gridNbRepeat, 1fr);
+  gap: $gridGapV $gridGapH;
+  &.grid-noGap {
+    gap: 0 0;
+  }
+  > * {
+    grid-column: span $gridColSpan;
+    grid-row: span $gridRowSpan;
+  }
+}
+// BOUCLE DE LA GRILLE
+@each $size, $values in $screen-sizes {
+  @media screen and (min-width: map-get($values, "breakpoint")) {
+    .container {
+      width: 100%;
+      max-width: map-get($values, "container-size");
+      margin: auto;
+    }
+    @for $i from 1 through 12 {
+      .col-#{$size}-#{$i} {
+        grid-column: span + " " + $i;
+      }
+      .row-#{$size}-#{$i} {
+        grid-row: span + " " + $i;
+      }
+    }
+  }
+}

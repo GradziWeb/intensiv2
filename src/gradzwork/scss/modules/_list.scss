@@ -1,0 +1,70 @@
+/*
+  ./modules/_list.scss
+  Module des listes
+ */
+
+
+//------------------------------------------------------------------------------------------------
+// .CLASS de du module des boites
+//------------------------------------------------------------------------------------------------
+
+//------------------------------------------------------------------------------------------------
+// VARIABLE LIST
+//------------------------------------------------------------------------------------------------
+$list-margin-default:1em 0;
+$list-list-style-default:disc;
+$list-margin: 0 0 0 1em;
+//ORDER
+$list-ord-padding:0;
+$list-list-style: auto;
+//ALTERNATE
+$list-alt-list-style:disc;
+$list-alt-li-even-background:$color-neutral-4;
+$list-alt-li-odd-background:$color-neutral-4;
+//ICON
+$list-icon-list-style:none;
+$list-icon-color:$color-text;
+$list-icon-li-margin:0.3em 0.8em 0.3em 0em;
+$list-icon-li-display:inline-block;
+//IMG
+$list-img-margin:2em auto;
+
+//------------------------------------------------------------------------------------------------
+// DEFAULT SPECIFICATIONS
+//------------------------------------------------------------------------------------------------
+
+// LIST
+.list{
+  margin: $list-margin-default;
+  list-style:$list-list-style-default;
+  margin: $list-margin;
+
+  &.ord {
+    padding: $list-ord-padding;
+    list-style:$list-list-style;
+  }
+  &.alt {
+    list-style: $list-alt-list-style;
+    li:nth-child(even) {
+      background-color: $list-alt-li-even-background;
+    }
+    li:nth-child(odd) {
+      background-color: $list-alt-li-odd-background;
+    }
+  }
+
+  &-icon {
+    list-style: $list-icon-list-style;
+    color: $list-icon-color;
+    li {
+      margin:$list-icon-li-margin;
+      display: $list-icon-li-display;
+    }
+  }
+  &-img{
+    margin: $list-img-margin;
+  }
+}
+
+//------------------------------------------------------------------------------------------------
+//

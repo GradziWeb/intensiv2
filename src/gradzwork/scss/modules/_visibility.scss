@@ -1,0 +1,26 @@
+/*
+  ./src/scss/framework/modules/_visibility.scss
+  Module des objets visible*/
+
+//------------------------------------------------------------------------------------------------
+//VISIBILITY HIDE-visible
+//------------------------------------------------------------------------------------------------
+
+
+@each $size, $values in $screen-sizes {
+  @media screen and (min-width: map-get( $values, "breakpoint")) {
+    //Cache l'element à partir de telle  taille
+    .#{$size}-hide {
+      display: none;
+    }
+  }
+}
+
+// SHOW
+@each $size, $values in $screen-sizes {
+  @media screen and (max-width: map-get($values, "breakpoint")) {
+    .#{$size}-visible {
+      display: none;
+    }
+  }
+}

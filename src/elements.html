@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTENSIV' - Elements</title>
+    <link rel="stylesheet" href="./app.scss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+</head>
+
+<body class="container">
+
+    <header class="siteHeader txt-center">
+        <div class="siteLogo">
+            <a href="./index.html" class="h2 btn-logo">Intensiv'</a>
+        </div>
+
+        <nav class="menu">
+            <div class="l-visible">
+                <div class="menu-horizontal">
+                    <ul class="menu-list">
+                        <li><a href="./index.html">THIS IS INTENSIV'</a></li>
+                        <li><a href="./post.html"> GENERIC PAGE</a></li>
+                        <li><a href="./elements.html" class="actif"> ELEMENTS REFERENCE</a></li>
+                    </ul>
+                    <ul class="list-icon">
+                        <li><a href="#" class="icon"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" class="icon"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" class="icon"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#" class="icon"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="l-hide">
+                <div class="menu-slider" id="trigger">
+                    <i class="fas fa-bars"> MENU</i>
+                </div>
+                <div id="triggered">
+                    <ul class="triggered-link">
+                        <li class="txt-right d-flex flex-just-end"><i class="fas fa-times" id="close"></i></li>
+                        <li><a href="./index.html">This is Intensiv'</a></li>
+                        <li><a href="./post.html">Generic Page</a></li>
+                        <li><a href="./elements.html">Elements reference</a></li>
+                    </ul>
+                    <ul class="triggered-icon">
+                        <li><a href="#" class="icon b"><i class="fab fa-twitter "></i></a></li>
+                        <li><a href="#" class="icon b"><i class="fab fa-facebook-f "></i></a></li>
+                        <li><a href="#" class="icon b"><i class="fab fa-instagram "></i></a></li>
+                        <li><a href="#" class="icon b"><i class="fab fa-github "></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="siteContent mainContent">
+            <header>
+                <h1 class="txt-center main-title">
+                    elements <br>
+                    reference
+                </h1>
+            </header>
+
+            <section>
+                <h2>Colors</h2>
+                <div class="flex-wrap">
+                    <div class="color-block color-1">#18bfef</div>
+                    <div class="color-block color-2">#4e403d</div>
+                    <div class="color-block color-text">212931</div>
+                    <div class="color-block color-neutral-1">#f6f6f6</div>
+                    <div class="color-block color-neutral-2">#717981</div>
+                    <div class="color-block color-neutral-3">#cfcfcf</div>
+                    <div class="color-block color-neutral-4">#fff</div>
+                </div>
+            </section>
+            <hr />
+
+            <section>
+                <h2>Text <span class="h4">- "Merriweather", Georgia, serif | #212931</span></h2>
+                <p>This is <b>bold</b> and this is <strong> strong </strong>.
+                    This is <i>italic</i> and this is <em>emphasized</em>.
+                    This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+                    This is <u>underlined</u> and this is code:
+                    <code>for (;;) { ... }</code>.
+                    Finally, this is a <a href="#" class="linkdeco">link</a>.
+                </p>
+            </section>
+            <hr />
+
+            <section>
+                <h2> HEADERS <span class="h4">- "Source sans pro", Helvetica, sans-serif | #212931</span></h2>
+                <h1>Heading Level 1</h1>
+                <h2>Heading Level 2</h2>
+                <h3>Heading Level 3</h3>
+                <h4>Heading Level 4</h4>
+                <h5>Heading Level 5</h5>
+                <h6>Heading Level 6</h6>
+            </section>
+            <hr />
+
+            <section>
+                <article>
+                    <h2> Heading with a subtitle</h2>
+                    <p class="subtitle-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Magnam nostrum voluptatibus ipsam adipisci, soluta minus nulla.
+                        Neque possimus eligendi totam dolorem, sunt quasi, natus sapiente et ea cupiditate cum porro?
+                    </p>
+                </article>
+                <article>
+                    <h3> Heading with a subtitle</h3>
+                    <p class="subtitle-3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Magnam nostrum voluptatibus ipsam adipisci, soluta minus nulla.
+                        Neque possimus eligendi totam dolorem, sunt quasi, natus sapiente et ea cupiditate cum porro?
+                    </p>
+                </article>
+                <article>
+                    <h4> Heading with a subtitle</h4>
+                    <p class="subtitle-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Magnam nostrum voluptatibus ipsam adipisci, soluta minus nulla.
+                        Neque possimus eligendi totam dolorem, sunt quasi, natus sapiente et ea cupiditate cum porro?
+                    </p>
+                </article>
+            </section>
+            <hr />
+
+            <section class="grid">
+                <h2>Lists</h2>
+                <div class="d-block col-l-6">
+                    <h3>Unordered - ul</h3>
+                    <ul class="list">
+                        <li>Magnam nostrum voluptatibus</li>
+                        <li>Magnam nostrum voluptatibus</li>
+                        <li>Magnam nostrum voluptatibus</li>
+                        <li>Magnam nostrum voluptatibus</li>
+                    </ul>
+                </div>
+                <div class="col-l-6">
+                    <h3>Ordered</h3>
+                    <ol class="list ord">
+                        <li>Magnam nostrum voluptatibus</li>
+                        <li>Magnam nostrum voluptatibus.</li>
+                        <li>Magnam nostrum voluptatibus</li>
+                        <li>Magnam nostrum voluptatibus</li>
+                        <li>Magnam nostrum voluptatibus</li>
+                    </ol>
+                </div>
+                <div class="col-l-6">
+                    <h3>Alternate - ul Alternate</h3>
+                    <ul class="list alt">
+                        <li>Magnam nostrum voluptatibus</li>
+                        <li>Magnam nostrum voluptatibus</li>
+                        <li>Magnam nostrum voluptatibus</li>
+                        <li>Magnam nostrum voluptatibus</li>
+                    </ul>
+                </div>
+                <div class="col-l-6">
+                    <h3>Icons</h3>
+                    <div>
+                        <ul class="list-icon">
+                            <li><a href="#" class="icon"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" class="icon"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" class="icon"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#" class="icon"><i class="fab fa-dribbble"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <ul class="list-icon">
+                            <li><a href="#" class="icon b"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" class="icon b"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" class="icon b"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#" class="icon b"><i class="fab fa-dribbble"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <section>
+                    <h3>definition</h3>
+                    <dl>
+                        <dt class="h4">Item1</dt>
+                        <dd>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Magnam nostrum voluptatibus ipsam adipisci, soluta minus nulla.
+                        </dd>
+
+                        <dt class="h4">Item2</dt>
+                        <dd>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Magnam nostrum voluptatibus ipsam adipisci, soluta minus nulla.
+                        </dd>
+
+                        <dt class="h4">Item3</dt>
+                        <dd>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Magnam nostrum voluptatibus ipsam adipisci, soluta minus nulla.
+                        </dd>
+                    </dl>
+                </section>
+
+                <section class="grid">
+                    <h3>BUTTONS</h3>
+
+                    <div>
+                        <a href="#" class="btn primary">primary</a>
+                        <a href="#" class="btn">default</a>
+                    </div>
+
+                    <div>
+                        <a href="#" class="btn large primary ">large</a>
+                        <a href="#" class="btn">default</a>
+                        <a href="#" class="btn small">small</a>
+                    </div>
+
+                    <div class="d-flex">
+                        <a href="#" class="btn fit primary ">fit</a>
+                        <a href="#" class="btn fit ">fit</a>
+                    </div>
+
+                    <div class="d-flex">
+                        <a href="#" class="btn fit small primary ">fit + small</a>
+                        <a href="#" class="btn fit small ">fit + small</a>
+                    </div>
+
+                    <div>
+                        <a href="#" class="btn primary"><i class="fas fa-search"></i>icon</a>
+                        <a href="#" class="btn "><i class="fas fa-download"></i>icon</a>
+                    </div>
+
+                    <div>
+                        <a href="#" class="btn primary opacity">Primary</a>
+                        <a href="#" class="btn opacity ">Default</a>
+                    </div>
+                </section>
+            </section>
+            <hr />
+
+            <section>
+                <h2>Blockquote</h2>
+                <blockquote>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Deserunt officia non eius beatae ea soluta.
+                    Quia reprehenderit eos consectetur cum hic nostrum modi incidunt aperiam doloribus,
+                    molestiae praesentium autem nam.
+                    Quia reprehenderit eos consectetur cum hic nostrum modi incidunt aperiam doloribus,
+                    molestiae praesentium autem nam.
+                </blockquote>
+            </section>
+            <hr />
+
+            <section>
+                <h2> Table </h2>
+                <h3>Default</h3>
+
+                <section>
+                    <table class="full-width">
+                        <thead>
+                            <tr class="grid">
+                                <th class="col-xs-2">Name</th>
+                                <th class="col-xs-8">description</th>
+                                <th class="col-xs-2">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr class="grid">
+                                <td class="col-xs-2">Item 1</td>
+                                <td class="col-xs-8">Magnam nostrum voluptatibus ipsam adipisci</td>
+                                <td class="col-xs-2">29.99</td>
+                            </tr>
+
+                            <tr class="grid">
+                                <td class="col-xs-2">Item 2</td>
+                                <td class="col-xs-8">Magnam nostrum voluptatibus ipsam adipisci</td>
+                                <td class="col-xs-2">19.99</td>
+                            </tr>
+
+                            <tr class="grid">
+                                <td class="col-xs-2">Item 3</td>
+                                <td class="col-xs-8">Magnam nostrum voluptatibus ipsam adipisci</td>
+                                <td class="col-xs-2">29.99</td>
+                            </tr>
+
+                            <tr class="grid">
+                                <td class="col-xs-2">Item 4</td>
+                                <td class="col-xs-8">Magnam nostrum voluptatibus ipsam adipisci</td>
+                                <td class="col-xs-2">19.99</td>
+                            </tr>
+
+                            <tr class="grid">
+                                <td class="col-xs-2">Item 5</td>
+                                <td class="col-xs-8">Magnam nostrum voluptatibus ipsam adipisci</td>
+                                <td class="col-xs-2">29.99</td>
+                            </tr>
+
+                        </tbody>
+
+                        <tfoot>
+                            <tr class="grid">
+                                <td class="col-xs-10"></td>
+                                <td class="col-xs-2">100.00</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </section>
+
+
+                <section>
+                    <h3>Alternate</h3>
+                    <table class="full-width alternate">
+                        <thead>
+                            <tr class="grid">
+                                <th class="col-xs-2">Name</th>
+                                <th class="col-xs-8">description</th>
+                                <th class="col-xs-2">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr class="grid">
+                                <td class="col-xs-2">Item 1</td>
+                                <td class="col-xs-8">Magnam nostrum voluptatibus ipsam adipisci</td>
+                                <td class="col-xs-2">29.99</td>
+                            </tr>
+
+                            <tr class="grid">
+                                <td class="col-xs-2">Item 2</td>
+                                <td class="col-xs-8">Magnam nostrum voluptatibus ipsam adipisci</td>
+                                <td class="col-xs-2">19.99</td>
+                            </tr>
+
+                            <tr class="grid">
+                                <td class="col-xs-2">Item 3</td>
+                                <td class="col-xs-8">Magnam nostrum voluptatibus ipsam adipisci</td>
+                                <td class="col-xs-2">29.99</td>
+                            </tr>
+
+                            <tr class="grid">
+                                <td class="col-xs-2">Item 4</td>
+                                <td class="col-xs-8">Magnam nostrum voluptatibus ipsam adipisci</td>
+                                <td class="col-xs-2">19.99</td>
+                            </tr>
+
+                            <tr class="grid">
+                                <td class="col-xs-2">Item 5</td>
+                                <td class="col-xs-8">Magnam nostrum voluptatibus ipsam adipisci</td>
+                                <td class="col-xs-2">29.99</td>
+                            </tr>
+
+                        </tbody>
+
+                        <tfoot>
+                            <tr class="grid">
+                                <td class="col-xs-10"></td>
+                                <td class="col-xs-2">100.00</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </section>
+
+            </section>
+            <hr />
+
+            <section>
+                <h2>Form</h2>
+
+                <form action="Form" method="GET" class="grid">
+                    <div class="grid">
+                        <input type="text" name="names" id="name1" placeholder="Name" class="col-m-6">
+                        <label class="d-none" for="name1">Name</label>
+                        <input type="text" name="email" placeholder="Email" class="col-m-6">
+                        <label for="email" class="d-none"> Email</label>
+                    </div>
+
+                    <label for="category">Category</label>
+                    <select name="category" id="category">
+                        <option disabled="disabled" selected="selected">- Category -</option>
+                        <option value="">Ragnar</option>
+                        <option value="">Cersei</option>
+                        <option value="">Son goku</option>
+                        <option value="">charles ingalls</option>
+                    </select>
+
+                    <div class="grid">
+
+                        <div class="col-m-4 d-flex a-center">
+                            <input type="radio" name="choose" id="low" checked="checked" class="radio-input" />
+                            <label for="low" class="radio-label">Low</label>
+                        </div>
+                        <div class="col-m-4 d-flex a-center">
+                            <input type="radio" name="choose" id="normal" class="radio-input" />
+                            <label for="normal" class="radio-label">Normal</label>
+                        </div>
+                        <div class="col-m-4 d-flex a-center">
+                            <input type="radio" name="choose" id="high" class="radio-input" />
+                            <label for="high" class="radio-label">High</label>
+                        </div>
+                    </div>
+
+                    <div class="grid">
+
+                        <div class="col-m-6 d-flex a-center">
+                            <input type="checkbox" name="email" id="emaill" class="checkbox-input">
+                            <label for="emaill" class="checkbox-label">Email me a copy</label>
+                        </div>
+                        <div class="col-m-6 d-flex a-center">
+                            <input type="checkbox" name="test" id="test" checked="checked" class="checkbox-input" />
+                            <label for="test" class="checkbox-label">I am a human</label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <textarea name="message" id="message1" placeholder="Enter your message"></textarea>
+                        <label for="message1" class="d-none">Message</label>
+                    </div>
+
+                    <div class="grid">
+
+                        <div class="col-xs-1">
+                            <input type="submit" value="Send message" class="btn primary">
+                            <label for="test" class="d-none">Send Message</label>
+                        </div>
+
+                        <div class="col-xs-1">
+                            <input type="submit" value="Reset" class="btn">
+                            <label for="test" class="d-none">Reset</label>
+                        </div>
+                    </div>
+
+                </form>
+            </section>
+            <hr />
+
+            <section>
+                <h2>Image</h2>
+                <section>
+
+                    <h3>Fit</h3>
+                    <img class="full-width" src="https://picsum.photos/800/350" alt="image 1">
+                    <div class="grid list-img">
+                        <img src="https://picsum.photos/600/350" class="col-s-4 full-width" alt="image 3">
+                        <img src="https://picsum.photos/600/350" class="col-s-4 full-width" alt="image 2">
+                        <img src="https://picsum.photos/600/350" class="col-s-4 full-width" alt="image 4">
+                        <img src="https://picsum.photos/600/350" class="col-s-4 full-width" alt="image 5">
+                        <img src="https://picsum.photos/600/350" class="col-s-4 full-width" alt="image 6">
+                        <img src="https://picsum.photos/600/350" class="col-s-4 full-width" alt="image 7">
+                        <img src="https://picsum.photos/600/350" class="col-s-4 full-width" alt="image 8">
+                        <img src="https://picsum.photos/600/350" class="col-s-4 full-width" alt="image 9">
+                        <img src="https://picsum.photos/600/350" class="col-s-4 full-width" alt="image 10">
+                    </div>
+
+                </section>
+                <section>
+
+                    <h3>left & right</h3>
+                    <div>
+                        <img class="float-left" src="https://picsum.photos/seed/picsum/200" alt="">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Unde, esse temporibus adipisci nam dolorum dicta molestias molestiae similique facere
+                            delectus
+                            illum,
+                            id debitis! Fugiat quo atque labore similique id tempora!
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Unde, esse temporibus adipisci nam dolorum dicta molestias molestiae similique facere
+                            delectus
+                            illum,
+                            id debitis! Fugiat quo atque labore similique id tempora!
+                            id debitis! Fugiat quo atque labore similique id tempora!
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Unde, esse temporibus adipisci nam dolorum dicta molestias molestiae similique facere
+                            delectus
+                            illum,
+                            id debitis! Fugiat quo atque labore similique id tempora!
+                        </p>
+                    </div>
+                    <div>
+                        <img class="float-right" src="https://picsum.photos/seed/picsum/200" alt="">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Unde, esse temporibus adipisci nam dolorum dicta molestias molestiae similique facere
+                            delectus
+                            illum,
+                            id debitis! Fugiat quo atque labore similique id tempora!
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Unde, esse temporibus adipisci nam dolorum dicta molestias molestiae similique facere
+                            delectus
+                            illum,
+                            id debitis! Fugiat quo atque labore similique id tempora!
+                            id debitis! Fugiat quo atque labore similique id tempora!
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Unde, esse temporibus adipisci nam dolorum dicta molestias molestiae similique facere
+                            delectus
+                            illum,
+                            id debitis! Fugiat quo atque labore similique id tempora!
+                        </p>
+                    </div>
+                </section>
+            </section>
+            <hr />
+
+            <section>
+                <h2>Box</h2>
+                <div class="box">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Unde, esse temporibus adipisci nam dolorum dicta molestias molestiae similique facere delectus
+                        illum,
+                        id debitis! Fugiat quo atque labore similique id tempora!
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Unde, esse temporibus adipisci nam dolorum dicta molestias molestiae similique facere delectus
+                        illum,
+                        id debitis! Fugiat quo atque labore similique id tempora!
+                    </p>
+
+                </div>
+
+            </section>
+            <hr />
+
+            <section>
+                <h2>Performatted</h2>
+                <pre>
+i = 0;
+
+while (!deck.isInOrder()) {
+print 'Iteration ' + i;
+deck.shuffle();
+i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';
+                    </pre>
+            </section>
+        </div>
+
+        <footer class="mainFooter grid">
+            <form action="submit" method="GET" class=" footerForm grid col-l-6 ">
+
+                <div class="flex-column">
+                    <label for="names" class="h4">Name</label>
+                    <input type="text" name="name" id="names">
+                </div>
+                <div class="flex-column">
+                    <label for="email" class="h4"> Email</label>
+                    <input type="text" name="email" id="email">
+                </div>
+
+                <div class="flex-column">
+                    <label for="message" class="h4">Message</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <div>
+
+                    <button type="submit">send Message</button>
+                </div>
+            </form>
+            <section class="grid col-l-6 footerContact grid-noGap ">
+                <div class="col-l-12 contactItem ">
+                    <div class="h4">Address</div>
+                    <address>
+                        <a href="#">9 rue Charles Deliège 4247 <br>Fléron, TN 00000-0000</a>
+                    </address>
+                </div>
+
+                <div class="col-l-12 contactItem">
+                    <div class="h4 ">Phone</div>
+                    <a href="tel:+0000000000" class="linkdeco">(000) 000-0000</a>
+                </div>
+
+                <div class="col-l-12 contactItem">
+                    <div class="h4">Email</div>
+                    <a href="mailto:info@untitles.tld" class="linkdeco">info@untitles.tld</a>
+                </div>
+
+                <div class="col-l-12 contactItem">
+                    <div class="h4">Social</div>
+                    <ul class="list-icon ">
+                        <li><a href="#" class="icon b"><i class="fab fa-twitter "></i></a></li>
+                        <li><a href="#" class="icon b"><i class="fab fa-facebook-f "></i></a></li>
+                        <li><a href="#" class="icon b"><i class="fab fa-instagram "></i></a></li>
+                        <li><a href="#" class="icon b"><i class="fab fa-github "></i></a></li>
+                    </ul>
+                </div>
+
+            </section>
+        </footer>
+
+    </main>
+
+    <footer class="SiteFooter txt-center">
+        &copy; Gradzi | DESIGN: <a href="#">IEPS</a>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+
+</html>

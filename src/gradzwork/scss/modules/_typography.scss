@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
+
+/*
+  ./src/scss/framework/modules/_typography.scss
+  Module de la typographie
+ */
+
+
+//------------------------------------------------------------------------------------------------
+// TYPOGRAPHY VARIABLES
+//------------------------------------------------------------------------------------------------
+$border-radius-default: 1px;
+
+//FONT
+$font-1: "Merriweather", Georgia, serif;
+$font-2: "Source Sans Pro", Helvetica, sans-serif;
+
+//------------------------------------------------------------------------------------------------
+// PARAGRAPHES
+
+$font-color-default: $color-text;
+$font-size-default: 1em;
+$font-weight-default: 300;
+$line-height-default: 2.4;
+$letter-spacing-default: -0.025em;
+$margin-default: 0 0 0.7em 0;
+
+//------------------------------------------------------------------------------------------------
+// HEADERS
+
+//H1-----------------
+$h1-font-color: $color-text;
+$h1-font-size: 4rem;
+$h1-font-weight: 900;
+$h1-line-height: 1.2;
+$h1-margin: 2rem 0 1rem 0;
+$h1-letter-spacing: 0.075rem;
+$h1-text-transform: uppercase;
+$h1-margin-bottom: 20px;
+
+//H2-----------------
+$h2-font-color: $color-text;
+$h2-font-size: 1.8rem;
+$h2-font-weight: 900;
+$h2-line-height: 1.3;
+$h2-margin: 1rem 0 1rem 0;
+$h2-letter-spacing: 0.075rem;
+$h2-text-transform: uppercase;
+$h2-margin-bottom: 20px;
+
+//H3-----------------
+$h3-font-color: $color-text;
+$h3-font-size: 1.2rem;
+$h3-font-weight: 900;
+$h3-line-height: 1.5;
+$h3-margin: 1rem 0 1rem 0;
+$h3-letter-spacing: 0.075rem;
+$h3-text-transform: uppercase;
+$h3-margin-bottom: 20px;
+
+//H4-----------------
+$h4-font-color: $color-text;
+$h4-font-size: 1rem;
+$h4-font-weight: 900;
+$h4-line-height: 1.2;
+$h4-margin: 1rem 0 1rem 0;
+$h4-letter-spacing: 0.075rem;
+$h4-text-transform: uppercase;
+$h4-margin-bottom: 15px;
+
+//H5-----------------
+$h5-font-color: $color-text;
+$h5-font-size: 0.8em;
+$h5-font-weight: 900;
+$h5-line-height: 1.2;
+$h5-margin: 1rem 0 1rem 0;
+$h5-letter-spacing: 0.075rem;
+$h5-text-transform: uppercase;
+$h5-margin-bottom: 15px;
+
+//H6-----------------
+$h6-font-size: 0.7rem;
+$h6-font-color: $color-text;
+$h6-font-weight: 900;
+$h6-line-height: 1.2;
+$h6-margin: 1rem 0 1rem 0;
+$h6-letter-spacing: 0.075rem;
+$h6-text-transform: uppercase;
+$h6-margin-bottom: 15px;
+
+// SUBTITLE----------------------------------
+
+// LINKS ----------------------------------
+$link-color: $color-text;
+$link-decoration: none;
+//LINK HOVER-----------------
+$link-hover-color: $color-1;
+$link-hover-decoration: none;
+
+// CODE----------------------------------
+$code-color: $color-neutral-2;
+$code-background: $color-neutral-1;
+$code-padding: 0.3em;
+$code-border: $color-neutral-3 1px solid;
+$code-border-radius: $border-radius-default;
+
+// PRE----------------------------------
+
+$pre-color: $color-text;
+$pre-background: $color-neutral-1;
+$pre-text-align: left;
+$pre-font-size: 0.9rem;
+$pre-font-weight: 200;
+$pre-padding: 1rem;
+$pre-border: $color-neutral-3 2px solid;
+$pre-line-height: 1.5em;
+// HR
+$hr-height: 1px;
+$hr-color: $color-neutral-3;
+$hr-margin: 3rem 0;
+$hr-border: none;
+
+//SUBBITLE ITALIC-------------------------------------------------------
+$subtitle1-font-size: 0.9em;
+$subtitle1-margin-top: -0.5rem;
+
+$subtitle2-font-size: 1rem;
+$subtitle2-margin-top: -0.5rem;
+
+$subtitle3-font-size: 0.8rem;
+$subtitle3-margin-top: -0.5rem;
+
+$subtitle4-font-size: 0.7rem;
+$subtitle4-margin-top: -0.5rem;
+
+//BLOCKQUOTE-----------------------------------------------------------
+$blockquote-font-style: italic;
+$blockquote-padding: 0.5rem 0 0.5rem 2rem;
+$blockquote-border-left: 4px solid $color-neutral-3;
+
+//iCON
+$icon-font-size-default: 1.2rem;
+$size-icon-default: 35px;
+$display-icon: flex;
+$justify-content-icon: center;
+$align-items-icon: center;
+$text-decoration-icon: none;
+$icon-border-border: 2px solid $color-neutral-3;
+$icon-border-border-radius: 50%;
+$icon-hover-color: $color-1;
+$icon-border-border-hover: 2px solid $color-1;
+
+//DECO LINK
+$linkdeco-text-decoration: underline dotted;
+
+//MAIN TITLE
+$main-title-font-size:3em;
+
+//------------------------------------------------------------------------------------------------
+// DEFAULT SPECIFICATIONS
+//------------------------------------------------------------------------------------------------
+
+body,
+.default {
+  font-family: $font-1;
+  font-size: $font-size-default;
+  font-weight: $font-weight-default;
+  line-height: $line-height-default;
+  color: $font-color-default;
+}
+//------------------------------------------------------------------------------------------------
+// LINKS
+a,
+.link {
+  color: $link-color;
+  text-decoration: $link-decoration;
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
+}
+
+ .linkdeco{
+  text-decoration :$linkdeco-text-decoration;
+}
+//------------------------------------------------------------------------------------------------
+// HR
+hr,
+.hr {
+  height: $hr-height;
+  background: $hr-color;
+  border: $hr-border;
+  margin: $hr-margin;
+}
+
+//------------------------------------------------------------------------------------------------
+// CODE
+
+code,
+.code {
+  color: $code-color;
+  background: $code-background;
+  padding: $code-padding;
+  border: $code-border;
+  border-radius: $code-border-radius;
+}
+
+pre {
+  color: $pre-color;
+  background: $pre-background;
+  text-align: $pre-text-align;
+  font-size: $pre-font-size;
+  font-weight: $pre-font-weight;
+  padding: $pre-padding;
+  border: $pre-border;
+  line-height: $pre-line-height;
+}
+//------------------------------------------------------------------------------------------------
+// HEADERS
+h1,
+.h1 {
+  font-family: $font-2;
+  color: $h1-font-color;
+  font-size: $h1-font-size;
+  font-weight: $h1-font-weight;
+  line-height: $h1-line-height;
+  margin: $h1-margin;
+  letter-spacing: $h1-letter-spacing;
+  text-transform: $h1-text-transform;
+  margin-bottom: $h1-margin-bottom;
+}
+h2,
+.h2 {
+  font-family: $font-2;
+  color: $h2-font-color;
+  font-size: $h2-font-size;
+  font-weight: $h2-font-weight;
+  line-height: $h2-line-height;
+  margin: $h2-margin;
+  letter-spacing: $h2-letter-spacing;
+  text-transform: $h2-text-transform;
+  margin-bottom: $h2-margin-bottom;
+}
+h3,
+.h3 {
+  font-family: $font-2;
+  color: $h3-font-color;
+  font-size: $h3-font-size;
+  font-weight: $h3-font-weight;
+  line-height: $h3-line-height;
+  margin: $h3-margin;
+  letter-spacing: $h3-letter-spacing;
+  text-transform: $h3-text-transform;
+  margin-bottom: $h3-margin-bottom;
+}
+h4,
+.h4 {
+  font-family: $font-2;
+  color: $h4-font-color;
+  font-size: $h4-font-size;
+  font-weight: $h4-font-weight;
+  line-height: $h4-line-height;
+  margin: $h4-margin;
+  letter-spacing: $h4-letter-spacing;
+  text-transform: $h4-text-transform;
+  margin-bottom: $h4-margin-bottom;
+}
+h5,
+.h5 {
+  font-family: $font-2;
+  color: $h5-font-color;
+  font-size: $h5-font-size;
+  font-weight: $h5-font-weight;
+  line-height: $h5-line-height;
+  margin: $h5-margin;
+  letter-spacing: $h5-letter-spacing;
+  text-transform: $h5-text-transform;
+  margin-bottom: $h5-margin-bottom;
+}
+h6,
+.h6 {
+  font-family: $font-2;
+  color: $h6-font-color;
+  font-size: $h6-font-size;
+  font-weight: $h6-font-weight;
+  line-height: $h6-line-height;
+  margin: $h6-margin;
+  letter-spacing: $h6-letter-spacing;
+  text-transform: $h6-text-transform;
+  margin-bottom: $h6-margin-bottom;
+}
+
+.main-title{
+  font-size:$main-title-font-size;
+}
+//------------------------------------------------------------------------------------------------
+// SUBTITLE ITALIC
+
+.subtitle {
+  font-style: italic;
+  &-1 {
+    font-size: $subtitle1-font-size;
+    margin-top: $subtitle1-margin-top;
+  }
+  &-2 {
+    font-size: $subtitle2-font-size;
+    margin-top: $subtitle2-margin-top;
+  }
+  &-3 {
+    font-size: $subtitle3-font-size;
+    margin-top: $subtitle3-margin-top;
+  }
+  &-4 {
+    font-size: $subtitle4-font-size;
+    margin-top: $subtitle4-margin-top;
+  }
+}
+//------------------------------------------------------
+//BLOCKQUOTE
+
+.blockquote,
+blockquote {
+  padding: $blockquote-padding;
+  font-style: $blockquote-font-style;
+  border-left: $blockquote-border-left;
+}
+
+//ICON---------------------------------------------------------------------------
+
+.icon {
+  font-size: $icon-font-size-default;
+  height: $size-icon-default;
+  width: $size-icon-default;
+  display: $display-icon;
+  justify-content: $justify-content-icon;
+  align-items: $align-items-icon;
+  text-decoration: $text-decoration-icon;
+  &.b {
+    border: $icon-border-border;
+    border-radius: $icon-border-border-radius;
+  }
+  &:hover {
+    color: $icon-hover-color;
+    &.b {
+      border: $icon-border-border-hover;
+    }
+  }
+}
+
+

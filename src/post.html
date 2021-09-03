@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTENSIV' - Elements</title>
+    <link rel="stylesheet" href="./app.scss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+</head>
+
+<body class="container">
+
+    <header class="siteHeader txt-center">
+        <div class="siteLogo">
+            <a href="./index.html" class="h2 btn-logo">Intensiv'</a>
+        </div>
+
+        <!-- Menu nav -->
+        <nav class="menu">
+            <div class="l-visible">
+                <div class="menu-horizontal">
+                    <ul class="menu-list">
+                        <li><a href="./index.html">THIS IS INTENSIV'</a></li>
+                        <li><a href="./post.html" class="actif"> GENERIC PAGE</a></li>
+                        <li><a href="./elements.html"> ELEMENTS REFERENCE</a></li>
+                    </ul>
+                    <ul class="list-icon">
+                        <li><a href="#" class="icon"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" class="icon"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" class="icon"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#" class="icon"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="l-hide">
+                <div class="menu-slider" id="trigger">
+                    <i class="fas fa-bars"> MENU</i>
+                </div>
+                <div id="triggered">
+                    <ul class="triggered-link">
+                        <li class="txt-right d-flex flex-just-end"><i class="fas fa-times" id="close"></i></li>
+                        <li><a href="./index.html">This is Intensiv'</a></li>
+                        <li><a href="./post.html">Generic Page</a></li>
+                        <li><a href="./elements.html">Elements reference</a></li>
+                    </ul>
+                    <ul class="triggered-icon">
+                        <li><a href="#" class="icon b"><i class="fab fa-twitter "></i></a></li>
+                        <li><a href="#" class="icon b"><i class="fab fa-facebook-f "></i></a></li>
+                        <li><a href="#" class="icon b"><i class="fab fa-instagram "></i></a></li>
+                        <li><a href="#" class="icon b"><i class="fab fa-github "></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="siteContent mainContent">
+            <article class="cardmain">
+                <header class="txt-center">
+                    <div class="d-inlineBlock line cardmain-published">
+                        <time datetime="2021-06-10" class="d-inlineBlock">June 10, 2021</time>
+                        <p class="d-inlineBlock">| Author: Graziella Pannuzzo</p>
+                    </div>
+                    <h1 class="txt-center cardmain-title">This is a Generic Page</h1>
+                </header>
+
+                <p class="subtitle-1 txt-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum cupiditate aliquid ducimus sunt
+                    expedita
+                    dignissimos corrupti officiis magni animi.
+                </p>
+
+                <figure class="zoom cardmain-img">
+                    <img src="https://picsum.photos/600/350" alt="image">
+                </figure>
+
+                <p class="txt-justify cardmain-content">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Unde, esse temporibus adipisci nam dolorum dicta molestias molestiae similique facere delectus
+                    illum,
+                    id debitis! Fugiat quo atque labore similique id tempora!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Unde, esse temporibus adipisci nam dolorum dicta molestias molestiae similique facere delectus
+                    illum,
+                    id debitis! Fugiat quo atque labore similique id tempora!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Ea fuga, molestias quasi accusamus voluptas natus ipsa illo beatae,
+                    nemo enim esse atque sit veniam quod voluptates tempora veritatis culpa at?
+
+                </p>
+                <p class="txt-justify cardmain-content">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Unde, esse temporibus adipisci nam dolorum dicta molestias molestiae similique facere delectus
+                    illum,
+                    id debitis! Fugiat quo atque labore similique id tempora!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Unde, esse temporibus adipisci nam dolorum dicta molestias molestiae similique facere delectus
+                    illum,
+                    id debitis! Fugiat quo atque labore similique id tempora!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Ea fuga, molestias quasi accusamus voluptas natus ipsa illo beatae,
+                    nemo enim esse atque sit veniam quod voluptates tempora veritatis culpa at?
+                </p>
+
+            </article>
+        </div>
+
+        <footer class="mainFooter grid">
+            <form action="submit" method="GET" class=" footerForm grid col-l-6 ">
+
+                <div class="flex-column">
+                    <label for="names" class="h4">Name</label>
+                    <input type="text" name="name" id="names">
+                </div>
+                <div class="flex-column">
+                    <label for="email" class="h4"> Email</label>
+                    <input type="text" name="email" id="email">
+                </div>
+
+                <div class="flex-column">
+                    <label for="message" class="h4">Message</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <div>
+
+                    <button type="submit">send Message</button>
+                </div>
+            </form>
+            <section class="grid col-l-6 footerContact grid-noGap ">
+                <div class="col-l-12 contactItem ">
+                    <div class="h4">Address</div>
+                    <address>
+                        <a href="#">9 rue Charles Deliège 4247 <br>Fléron, TN 00000-0000</a>
+                    </address>
+                </div>
+
+                <div class="col-l-12 contactItem">
+                    <div class="h4 ">Phone</div>
+                    <a href="tel:+0000000000" class="linkdeco">(000) 000-0000</a>
+                </div>
+
+                <div class="col-l-12 contactItem">
+                    <div class="h4">Email</div>
+                    <a href="mailto:info@untitles.tld" class="linkdeco">info@untitles.tld</a>
+                </div>
+
+                <div class="col-l-12 contactItem">
+                    <div class="h4">Social</div>
+                    <ul class="list-icon ">
+                        <li><a href="#" class="icon b"><i class="fab fa-twitter "></i></a></li>
+                        <li><a href="#" class="icon b"><i class="fab fa-facebook-f "></i></a></li>
+                        <li><a href="#" class="icon b"><i class="fab fa-instagram "></i></a></li>
+                        <li><a href="#" class="icon b"><i class="fab fa-github "></i></a></li>
+                    </ul>
+                </div>
+
+            </section>
+        </footer>
+
+    </main>
+
+
+    <footer class="SiteFooter txt-center">
+        &copy; Gradzi | DESIGN: <a href="#">IEPS</a>
+    </footer>
+    <script src="./app.js"></script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org/",
+            "@type": "Article",
+            "headline": "This is a Generic Page",
+            "alternativeHeadline":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum cupiditate aliquid ducimus sunt expedita dignissimos corrupti officiis magni animi.",
+            "image":"https://picsum.photos/600/350",
+            "datePublished": "2021-06-10T08:30:00+08:00",
+            "dateModified": "2021-06-10T11:50:00+08:00",
+            "author": {
+                "@type": "Person",
+                "name": "Pannuzzo Graziella"
+            },
+            "articleBody":
+            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, esse temporibus adipisci nam dolorum dicta molestias molestiae similique facere delectus illu id debitis! Fugiat quo atque labore similique id tempora! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, esse temporibus adipisci nam dolorum dicta molestias molestiae similique facere delectus illum, id debitis! Fugiat quo atque labore similique id tempora! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea fuga, molestias quasi accusamus voluptas natus ipsa illo beatae, nemo enim esse atque sit veniam quod voluptates tempora veritatis culpa at?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, esse temporibus adipisci nam dolorum dicta molestias molestiae similique facere delectus illu id debitis! Fugiat quo atque labore similique id tempora! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, esse temporibus adipisci nam dolorum dicta molestias molestiae similique facere delectus illum, id debitis! Fugiat quo atque labore similique id tempora! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea fuga, molestias quasi accusamus voluptas natus ipsa illo beatae, nemo enim esse atque sit veniam quod voluptates tempora veritatis culpa at?"
+        }
+    </script>
+</body>
+
+</html>

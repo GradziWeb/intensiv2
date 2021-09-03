@@ -1,0 +1,123 @@
+/*
+  .modules/_button.scss
+  Module des bouttons
+ */
+
+//------------------------------------------------------------------------------------------------
+//MODULE VARIABLE
+//------------------------------------------------------------------------------------------------
+//BTN GENERAL-----------------------------------
+
+$btn-margin: 1rem 1rem 1rem 0;
+$btn-padding: 0.7rem 1.5rem;
+$btn-border: 3px solid $color-text;
+$btn-border-radius: 0;
+$btn-text-align: center;
+$btn-font-family: $font-2;
+$btn-font-weight: 900;
+$btn-display: inline-block;
+$btn-font-size: 1em;
+$btn-line-height: 1.2;
+$btn-letter-spacing: 0.07rem;
+$btn-text-transform: uppercase;
+//HOVER
+$btn-hover-color: $color-1;
+$btn-hover-border-color: $color-1;
+
+//LARGE ---------------
+$btn-large-padding: 1rem 2.4rem;
+$btn-large-font-size: 1.1em;
+
+//SMALL ---------------
+$btn-small-padding: 0.5rem 1.2em;
+$btn-small-font-size: 0.8em;
+//FIT -----------------
+$btn-fit-width: 50%;
+$btn-fit-text-align: center;
+//OPACITY ---------------
+$btn-opacity: 0.4;
+
+//------------------------------
+//PRIMARY 
+$btn-primary-background: $color-text;
+$btn-primary-color:$color-neutral-1;
+//PRIMARY HOVER
+$btn-primary-hover-background:$color-1;
+$btn-primary-hover-color:$color-neutral-1;
+$btn-primary-hover-border:3px solid $color-1;
+
+//LOGO
+$btn-logo-border: 5px solid $color-neutral-1;
+$btn-logo-padding:0.3em 0.9em;
+$btn-logo-color: $color-neutral-1;
+//LOGO HOVER
+$btn-logo-hover-color:$color-neutral-1;
+$btn-logo-hover-border-color:$color-neutral-1;
+
+
+
+
+//------------------------------------------------------------------------------------------------
+//MODULE SPECIFICATIONS
+//------------------------------------------------------------------------------------------------
+//BUTTONS
+.btn,
+button {
+  margin: $btn-margin;
+  padding: $btn-padding;
+  border: $btn-border;
+  font-family: $btn-font-family;
+  background: $color-neutral-1;
+  color: $color-text;
+  display: $btn-display;
+  text-align: $btn-text-align;
+  font-size: $btn-font-size;
+  font-weight: $btn-font-weight;
+  line-height: $btn-line-height;
+  letter-spacing: $btn-letter-spacing;
+  text-transform: $btn-text-transform;
+  border-radius: $btn-border-radius;
+  &:hover {
+    color: $btn-hover-color;
+    border-color: $btn-hover-border-color;
+  }
+  //SIZE
+  &.large {
+    padding: $btn-large-padding;
+    font-size: $btn-large-font-size;
+  }
+
+  &.small {
+    padding: $btn-small-padding;
+    font-size: $btn-small-font-size;
+  }
+
+  &.fit {
+    width: $btn-fit-width;
+    text-align: $btn-fit-text-align;
+  }
+  //OPACITY
+  &.opacity {
+    opacity: $btn-opacity;
+  }
+  //PRIMARY
+  &.primary {
+    background: $btn-primary-background;
+    color: $btn-primary-color;
+    &:hover {
+      background: $btn-primary-hover-background;
+      color: $btn-primary-hover-color;
+      border: $btn-primary-hover-border;
+    }
+  }
+  //LOGO
+  &-logo {
+    border: $btn-logo-border;
+    padding: $btn-logo-padding;
+    color: $btn-logo-color;
+    &:hover {
+      color: $btn-logo-hover-color;
+      border-color: $btn-logo-hover-border-color;
+    }
+  }
+}

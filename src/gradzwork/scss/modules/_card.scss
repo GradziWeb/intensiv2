@@ -1,0 +1,169 @@
+/*
+  ./modules/_card.scss
+  Module des card
+ */
+
+//------------------------------------------------------------------------------------------------
+//MODULE VARIABLES
+//------------------------------------------------------------------------------------------------
+//CARDMAIN----------------------------
+    $cardmain-margin:auto;
+    $cardmain-width:100%;
+    $cardmain-background:$color-neutral-4;
+    $cardmain-display:flex;
+    $cardmain-flex-direction:column;
+    $cardmain-justify-content:center;
+    $cardmain-text-align:center;
+    $cardmain-padding:2em;
+
+//PUBLISHED
+    $cardmain-published-font-size:0.9em;
+//TITLE
+    $cardmain-title-font-size:3em;
+    $cardmain-title-text-stranform:uppercase;
+    $cardmain-title-font-weight:$h1-font-weight;
+//CONTENT
+    $cardmain-content-font-size:0.9em;
+//BTN
+    $cardmain-btn-margin:0 auto;  
+//IMG
+
+    $cardmain-img-margin:2em auto;
+    $cardmain-img-width: 100%;
+    $cardmain-img-object-fit: cover;
+    $cardmain-img-object-position: bottom;
+
+//CARD---------------------------------------
+
+    $card-background: $color-neutral-4;
+    $card-display: flex;
+    $card-flex-direction: column;
+    $card-justify-content: center;
+    $card-text-align: center;
+    $card-padding-bottom: 2em;
+    $card-border-bottom: 2px solid $color-neutral-3;
+    $card-padding: 3rem;
+    $card-2type-border-top:2px solid $color-neutral-3;
+  //PUBLISHED 
+  $card-published-font-size: 1em;
+  //TITLE 
+    $card-title-font-size: 2em;
+    $card-title-text-transform: uppercase;
+    $card-title-font-weight: $h1-font-weight;
+    $card-title-margin: 0 auto;
+  //HOVER title
+    $card-title-hover-color:$color-1;
+  // CONTENT 
+    $card-content-font-size: $subtitle1-font-size;
+  //IMG 
+    $card-img-margin: 2em auto;
+    $card-img-width: 100%;
+
+   // CARD BREAKPOINT M
+
+      $card-m-border-bottom: 2px solid $color-neutral-3;
+      $card-m-padding: 2rem;
+      $card-m-type3-border-top: 2px solid $color-neutral-3;
+      $card-m-typeodd-border-left: 2px solid $color-neutral-3;
+      //PUBLISHED
+      $card-m-published-font-size: 0.7em;
+      //TITLE
+      $card-m-title-font-size: $h2-font-size;
+      $card-m-title-font-weight: $h2-font-weight;
+      $card-m-title-width: 90%;
+      //CONTENT
+      $card-m-content-font-size: $subtitle3-font-size;
+
+//------------------------------------------------------------------------------------------------
+//MODULE SPECIFICATIONS
+//------------------------------------------------------------------------------------------------
+//CARDMAIN
+.cardmain {
+  margin: $cardmain-margin;
+  width: $cardmain-width;
+  background: $cardmain-background;
+  display:$cardmain-display;
+  flex-direction: $cardmain-flex-direction;
+  justify-content: $cardmain-justify-content;
+  text-align: $cardmain-text-align;
+  padding:$cardmain-padding;
+  &-published {
+    font-size: $cardmain-published-font-size;
+  }
+  &-title {
+    font-size: $cardmain-title-font-size;
+    text-transform: $cardmain-title-text-stranform;
+    font-weight: $cardmain-title-font-weight;
+  }
+  &-content {
+    font-size: $cardmain-content-font-size;
+  }
+  &-btn {
+    margin: $cardmain-btn-margin;
+  }
+  &-img {
+    margin:$cardmain-img-margin;
+    width: $cardmain-img-width;
+    object-fit: $cardmain-img-object-fit;
+    object-position: $cardmain-img-object-position;
+  }
+}
+
+
+// CARD 
+.card {
+  background: $card-background;
+  display:$card-display;
+  flex-direction:$card-flex-direction;
+  justify-content: $card-justify-content;
+  text-align: $card-text-align;
+  padding-bottom: $card-padding-bottom;
+  border-bottom: $card-border-bottom;
+  padding: $card-padding;
+  &:nth-of-type(2) {
+  border-top: $card-2type-border-top;
+      }
+
+  &-published {
+    font-size: $card-published-font-size;
+  }
+  &-title {
+    font-size: $card-title-font-size;
+    text-transform: $card-title-text-transform;
+    font-weight: $card-title-font-weight;
+    margin: $card-title-margin;
+    &:hover {
+      color: $card-title-hover-color;
+    }
+  }
+  &-content {
+    font-size: $card-content-font-size;
+  }
+  &-img {
+    margin: $card-img-margin;
+    width: $card-img-width;
+  }
+
+
+  @media screen and (min-width: map-get($screen-sizes, "m", "breakpoint")) {
+    border-bottom: $card-m-border-bottom;
+    padding: $card-m-padding;
+    &:nth-of-type(3) {
+  border-top: $card-m-type3-border-top;
+      }
+    &:nth-of-type(odd) {
+      border-left:2px solid $color-neutral-3;
+    }
+    &-published {
+      font-size: $card-m-published-font-size;
+    }
+    &-title {
+      font-size: $card-m-title-font-size;
+      font-weight:  $card-m-title-font-weight;
+      width: $card-m-title-width;
+    }
+    &-content {
+      font-size:  $card-m-content-font-size;
+    }
+  }
+}

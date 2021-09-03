@@ -1,0 +1,101 @@
+/*
+  .modules/_form.scss
+  Module des formulaires
+ */
+//------------------------------------------------------------------------------------------------
+// VARIABLE FORM
+//-----------------------------------------------------------------------------------------------
+//FIELDSET
+$form-fieldset-border:0;
+$form-fieldset-padding:0;
+// SELECT
+$form-select-padding: 0.8em;
+$form-select-border: 2px solid $color-neutral-3;
+$form-select-margin-bottom: 2em;
+$form-select-font-family: $font-1;
+//TEXTAREA
+  $form-textarea-width: 100%;
+  $form-textarea-padding: 0.7rem;
+  $form-textarea-height: 15rem;
+  $form-textarea-color: $color-text;
+  $form-textarea-border: 2px solid $color-neutral-3;
+    //FOCUS VISIBLE
+    $form-textarea-focus-visible-border: 2px solid $color-1;
+    $form-textarea-focus-visible-outline: none;
+    //PLACEHOLDER
+    $form-textarea-placeholder-color: $color-neutral-3;
+
+  //OPTION---------------
+  $form-option-selected-padding: 1em;
+  $form-option-selected-font-size: 1em;
+  $form-option-selected-color: $color-text;
+  $form-option-selected-background: $color-neutral-3;
+  
+  //INPUT
+    $form-input-font-size: $font-size-default;
+    $form-input-padding: 0.5em;
+    $form-input-border: 2px solid $color-neutral-3;
+    $form-input-type-display:none;
+
+    $form-input-focus-visible-border: 2px solid $color-1;
+    $form-input-focus-visible-outline: none;
+ 
+    $form-input-focus-visible-placeholder-color: $color-neutral-3;
+
+
+//------------------------------------------------------------------------------------------------
+//MODULE SPECIFICATIONS
+//------------------------------------------------------------------------------------------------
+//GENERAL-----------------------------------
+
+form {
+  fieldset {
+    border: $form-fieldset-border;
+    padding: $form-fieldset-padding;
+  }
+  select {
+    padding:$form-select-padding;
+    border: $form-select-border;
+    font-family: $form-select-font-family;
+    margin-bottom:$form-select-margin-bottom;
+  }
+  //TEXT AREA
+  textarea {
+    width: $form-textarea-width;
+    padding: $form-textarea-padding;
+    height: $form-textarea-height;
+    color: $form-textarea-color;
+    border: $form-textarea-border;
+    &:focus-visible {
+      border: $form-textarea-focus-visible-border;
+      outline: $form-textarea-focus-visible-outline;
+      &::placeholder {
+        color: $form-textarea-placeholder-color;
+      }
+    }
+  }
+  //OPTION CATEGORY
+  option[selected="selected"] {
+    padding: $form-option-selected-padding;
+    font-size:$form-option-selected-font-size;
+    color: $form-option-selected-color;
+    background: $form-option-selected-background;
+  }
+
+  input {
+    font-size: $form-input-font-size;
+    padding:$form-input-padding;
+    border: $form-input-border;
+    &[type="radio"],
+    &[type="checkbox"] {
+      display:$form-input-type-display;
+    }
+    &:focus-visible {
+      border: $form-input-focus-visible-border;
+      outline: $form-input-focus-visible-outline;
+      &::placeholder {
+        color: $form-input-focus-visible-placeholder-color;
+      }
+    }
+  }
+}

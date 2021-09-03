@@ -1,0 +1,126 @@
+/*
+  ./modules/_pagination.scss
+  Module des paginations
+ */
+
+//------------------------------------------------------------------------------------------------
+// VARIABLE
+//------------------------------------------------------------------------------------------------
+//-PAGINATION  
+  $pagination-margin: 4em 0 2em 0;
+  $pagination-display: flex;
+  $pagination-justify-content: center;
+    //PAGE
+    $pagination-page-color: $color-text;
+    $pagination-page-padding: 1rem;
+    $pagination-page-display: flex;
+    
+    $pagination-page-justify-content: center;
+    $pagination-page-align-items: center;
+    $pagination-page-height: 3rem;
+    $pagination-page-line-height: 1rem;
+    $pagination-page-margin-left: -3px;
+    $pagination-page-width: 3rem;
+    
+    $pagination-page-border: 3px solid $color-neutral-1;
+    $pagination-page-font-family: $font-1;
+    $pagination-page-font-weight: 600;
+      //HOVER
+      $pagination-page-hover-z-index: 1;
+      $pagination-page-hover-border: 3.2px solid $color-1;
+      $pagination-page-hover-color: $color-1;
+      //ACTIF
+      $pagination-page-actif-background-color: $color-neutral-1;
+
+    //ECT
+    $pagination-etc-color: $color-neutral-1;
+
+    //NEXT
+    $pagination-next-color: $color-text;
+    $pagination-next-position: relative;
+    $pagination-next-display: flex;
+    $pagination-next-padding-left: 1em;
+    $pagination-next-padding-right: 1em;
+    $pagination-next-padding-bottom: 0.5em;
+    $pagination-next-height: 3rem;
+    $pagination-next-line-height: 3rem;
+    $pagination-next-margin-left: -3px;
+    $pagination-next-border: 3px solid $color-neutral-1;
+    $pagination-next-font-family: $font-1;
+    $pagination-next-font-weight: 600;
+    //ICON
+      $pagination-next-i-display: flex;
+      $pagination-next-i-margin-top: 1.5em;
+      $pagination-next-i-align-items: center;
+      $pagination-next-i-font-size: 10px;
+      $pagination-next-i-padding-left: 0.4em;
+    //HOVER
+      $pagination-next-hover-z-index: 1;
+      $pagination-next-hover-border: 3.2px solid $color-1;
+      $pagination-next-hover-color: $color-1;
+
+//------------------------------------------------------------------------------------------------
+// DEFAULT SPECIFICATIONS
+//------------------------------------------------------------------------------------------------
+
+  $pagination-margin: 4em 0 2em 0;
+  $pagination-display: flex;
+  $pagination-justify-content: center;
+
+.pagination {
+  margin: $pagination-margin;
+  display: $pagination-display;
+  justify-content: $pagination-justify-content;
+
+  .page {
+    color: $pagination-page-color;
+    padding:$pagination-page-padding;
+    display: $pagination-page-display;
+    justify-content: $pagination-page-justify-content;
+    align-items: $pagination-page-align-items;
+    height:$pagination-page-height;
+    line-height: $pagination-page-line-height;
+    margin-left:$pagination-page-margin-left;
+    width: $pagination-page-width;
+    border: $pagination-page-border;
+    font-family: $pagination-page-font-family;
+    font-weight: $pagination-page-font-weight;
+    &:hover {
+      z-index:$pagination-page-hover-z-index;
+      border: $pagination-page-hover-border;
+      color: $pagination-page-hover-color;
+    }
+    &.actif {
+      background-color: $pagination-page-actif-background-color;
+    }
+  }
+  .etc {
+    color: $pagination-etc-color;
+  }
+  .next {
+    color: $pagination-next-color;
+    position: $pagination-next-position;
+    display: $pagination-next-display;
+    padding-left: $pagination-next-padding-left;
+    padding-right: $pagination-next-padding-right;
+    padding-bottom: $pagination-next-padding-bottom;
+    height: $pagination-next-height;
+    line-height: $pagination-next-line-height;
+    margin-left: $pagination-next-margin-left;
+    border: $pagination-next-border;
+    font-family: $pagination-next-font-family;
+    font-weight: $pagination-next-font-weight;
+    i {
+      display: $pagination-next-i-display;
+      margin-top: $pagination-next-i-margin-top;
+      align-items: $pagination-next-i-align-items;
+      font-size: $pagination-next-i-font-size;
+      padding-left: $pagination-next-i-padding-left;
+    }
+    &:hover {
+      z-index: $pagination-next-hover-z-index;
+      border: $pagination-next-hover-border;
+      color: $pagination-next-hover-color;
+    }
+  }
+}

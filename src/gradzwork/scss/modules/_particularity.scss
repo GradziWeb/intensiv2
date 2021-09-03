@@ -1,0 +1,105 @@
+/*
+  ./modules/_helper.scss
+  Module des particularity
+ */
+//------------------------------------------------------------------------------------------------
+//VARIABLE PARTICULARITY
+//------------------------------------------------------------------------------------------------
+
+//BOX------------------------------------------------------------------
+$box-border:1px solid $color-neutral-3;
+$box-padding:1rem;
+//IMG 
+ $img-display: block;
+//FULL WIDTH 
+$full-width-width: 100%;
+//ZOOM 
+  $zoom-width: 100%;
+  $zoom-overflow: hidden;
+    //IMG
+      $zoom-img-width: 100%;
+      $zoom-img-height: 100%;
+      $zoom-img-object-fit: cover;
+      $zoom-img-object-position: bottom;
+      $zoom-img--webkit-transition: 0.3s ease-in-out;
+      $zoom-img-transition: 0.3s ease-in-out;
+    //IMG HOVER
+      $zoom-img-hover-transform: scale(1.1);
+      $zoom-img-hover-webkit-transform: scale(1.1);
+
+//LINE BETWEEN WORDS
+
+  $line-display: flex;
+  $line-align-items: center;
+  $line-text-align: center;
+  //LINE BEFORE AND AFTER
+  $line-before-after-content:"";
+  $line-before-after-flex: 1;
+  $line-before-after-border-bottom: 1px solid $color-neutral-3;
+  // LINE BEFORE,AFTER
+  $line-before-margin-right:1rem;
+  $line-after-margin-left:1em;
+
+
+
+//------------------------------------------------------------------------------------------------
+// DEFAULT SPECIFICATIONS
+//------------------------------------------------------------------------------------------------
+
+//BOX----------------------------------------------------------------------
+.box {
+  border: $box-border;
+  padding: $box-padding;
+}
+
+//IMAGE----------------------------------------------------------------------
+
+img {
+  display: $img-display;
+}
+
+.full-width {
+  width: $full-width-width;
+}
+//IMAGE SCALE----------------------------------------------------------------
+.zoom {
+  width: $zoom-width;
+  overflow: $zoom-overflow;
+}
+
+.zoom img {
+  width: $zoom-img-width;
+  height: $zoom-img-height;
+  object-fit:$zoom-img-object-fit;
+  object-position: $zoom-img-object-position;
+  -webkit-transition:$zoom-img--webkit-transition;
+  transition: $zoom-img-transition;
+}
+
+.zoom img:hover {
+  transform: $zoom-img-hover-transform;
+  -webkit-transform: $zoom-img-hover-webkit-transform;
+}
+
+//LINE BETWEEN WORDS-----------------------------------------------------------
+.line {
+  display: $line-display;
+  align-items: $line-align-items;
+  text-align:$line-text-align;
+}
+
+.line::before,
+.line::after {
+  content: $line-before-after-content;
+  flex: $line-before-after-flex;
+  border-bottom:1px solid $color-neutral-3;
+}
+
+.line::before {
+  margin-right: $line-before-margin-right;
+}
+
+.line::after {
+  margin-left: $line-after-margin-left;
+}
+

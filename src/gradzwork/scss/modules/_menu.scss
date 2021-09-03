@@ -1,0 +1,77 @@
+/*
+  ./modules/_menu.scss
+  Module du menu navigation
+ */
+
+//------------------------------------------------------------------------------------------------
+// VARIABLE MENU
+//------------------------------------------------------------------------------------------------
+//MENU
+$menu-background: #71798159;
+//MENU HORIZONTAL
+    $menu-horiz-display: flex;
+    $menu-horiz-justify-content: space-between;
+    $menu-horiz-align-items: center;
+    $menu-horiz-font-family: $font-2;
+    //MENU LIST
+      $menu-horiz-menu-list-display: flex;
+      $menu-horiz-menu-list-flex-direction: row;
+      $menu-horiz-menu-list-padding-left: 0;
+      $menu-horiz-menu-list-list-style: none;
+        //  ACTIF
+        $menu-horiz-menu-list-actif-background: $color-neutral-4;
+        $menu-horiz-menu-list-actif-color: $color-text;
+        // LINK
+        $menu-horiz-menu-list-a-display: flex;
+        $menu-horiz-menu-list-a-font-size: 0.8rem;
+        $menu-horiz-menu-list-a-font-weight: 900;
+        $menu-horiz-menu-list-a-padding: 1em 1.8em;
+        $menu-horiz-menu-list-a-color: $color-neutral-4;
+        $menu-horiz-menu-list-a-text-transform: uppercase;
+        $menu-horiz-menu-list-a-text-decoration: none;
+        //LINK HOVER
+        $menu-horiz-menu-list-a-hover-background: $color-neutral-2;
+        $menu-horiz-menu-list-a-hover-color: $color-neutral-1;
+    //ICON
+      $menu-horiz-icon-color: $color-neutral-1;
+//------------------------------------------------------------------------------------------------
+// DEFAULT SPECIFICATIONS
+//------------------------------------------------------------------------------------------------
+
+
+nav,
+.menu {
+  background: $menu-background;
+  &-horizontal {
+    display: $menu-horiz-display;
+    justify-content: $menu-horiz-justify-content;
+    align-items: $menu-horiz-align-items;
+    font-family: $menu-horiz-font-family;
+    .menu-list {
+      display: $menu-horiz-menu-list-display;
+      flex-direction: $menu-horiz-menu-list-flex-direction;
+      padding-left: $menu-horiz-menu-list-padding-left;
+      list-style: $menu-horiz-menu-list-list-style;
+      .actif {
+        background:$menu-horiz-menu-list-actif-background;
+        color: $menu-horiz-menu-list-actif-color;
+      }
+      a {
+        display: $menu-horiz-menu-list-a-display;
+        font-size: $menu-horiz-menu-list-a-font-size;
+        font-weight: $menu-horiz-menu-list-a-font-weight;
+        padding: $menu-horiz-menu-list-a-padding;
+        color: $menu-horiz-menu-list-a-color;
+        text-transform: $menu-horiz-menu-list-a-text-transform;
+        text-decoration: $menu-horiz-menu-list-a-text-decoration;
+        &:hover:not(.actif){
+          background: $menu-horiz-menu-list-a-hover-background;
+          color: $menu-horiz-menu-list-a-hover-color;
+        }
+      }
+    }
+    .icon{
+      color: $menu-horiz-icon-color;
+    }
+  }
+}

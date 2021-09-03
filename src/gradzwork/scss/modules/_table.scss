@@ -1,0 +1,77 @@
+/*
+  ./modules/_table.scss
+  Module des tables
+ */
+
+// -------------------------------------------------------------------
+// VARIRABLE TABLE
+// -------------------------------------------------------------------
+// TABLE
+  $table-margin: 1em 0;
+  $table-border-collapse: collapse;
+    //TD 
+      $table-td-padding: 0.5em;
+    //THEAD 
+      $table-thead-text-align: left;
+      $table-thead-font-family: $font-2;
+      $table-thead-font-weight: 900;
+      $table-thead-text-transform: uppercase;
+        //TH
+        $table-thead-th-padding-left: 0.5em;
+    //TBODY 
+      $table-tbody-text-align: left;
+      $table-tbody-tr-type-odd-background: $color-neutral-1;
+
+    //TFOOT 
+    $table-tfoot-text-align: left;
+    //ALTERNATE
+      $table-alt-tbody-border: 1px solid $color-neutral-1;
+      $table-alt-tr-border-left: 1px solid $color-neutral-1;
+
+      $table-alt-td-type2-border-left: 1px solid $color-neutral-3;
+      $table-alt-td-type2-border-right: 1px solid $color-neutral-3;
+//------------------------------------------------------------------------------------------------
+// DEFAULT SPECIFICATIONS
+//------------------------------------------------------------------------------------------------
+
+table {
+  margin: $table-margin;
+  border-collapse: $table-border-collapse;
+  td {
+    padding: $table-td-padding;
+  }
+  // THEAD
+  thead {
+    text-align: $table-thead-text-align;
+    font-family: $table-thead-font-family;
+    font-weight: $table-thead-font-weight;
+    text-transform:$table-thead-text-transform;
+    th {
+      padding-left: $table-thead-th-padding-left;
+    }
+  }
+  //Tbody
+  tbody {
+    text-align: $table-tbody-text-align;
+    tr:nth-of-type(odd) {
+      background:$table-tbody-tr-type-odd-background;
+    }
+  }
+  // TFooter
+  tfoot {
+    text-align:$table-tfoot-text-align;
+  }
+  // ALTERNATE
+  &.alternate {
+    tbody {
+      border: $table-alt-tbody-border;
+      tr {
+        border-left: $table-alt-tr-border-left;
+      }
+      td:nth-of-type(2) {
+        border-left: $table-alt-td-type2-border-left;
+        border-right: $table-alt-td-type2-border-right;
+      }
+    }
+  }
+}
